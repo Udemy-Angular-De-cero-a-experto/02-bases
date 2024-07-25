@@ -12,13 +12,17 @@
       'list-group-item-dark': isLast,
       'list-group-item-warning': isFirst,
     }">
+
     <div>
       <span class="text-primary"> {{ i + 1 }}. </span>
       <span>{{character.name}} - </span>
       <strong>Power: </strong>
       <span>{{character.power}}</span>
     </div>
-    <button class="btn btn-danger" (click)="onDeleteCharacter(i)">X</button>
+
+    <!-- <button class="btn btn-danger" (click)="onDeleteCharacter(i)">X</button> -->
+    <button class="btn btn-danger" (click)="deleteCharacterById(character.id!)">X</button>
+
   </li>
 </ul>
 
